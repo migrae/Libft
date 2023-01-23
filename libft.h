@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Libft.h                                            :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mgraefen <mgraefen@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 10:15:58 by mgraefen          #+#    #+#             */
-/*   Updated: 2022/11/01 10:54:07 by mgraefen         ###   ########.fr       */
+/*   Updated: 2022/12/21 09:57:18 by mgraefen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdarg.h>
+# include "get_next_line.h"
 
 typedef struct s_list
 {
@@ -108,5 +110,21 @@ void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+int		ft_printf(const char *str, ...);
+
+int		ft_print_str(char *str);
+
+int		ft_print_nbr(int n);
+
+int		ft_print_hex(unsigned int dec, const char format);
+
+int		ft_print_ptr(unsigned long long ptr);
+
+int		ft_print_unsigned(unsigned int n);
+
+int		ft_print_percent(void);
+
+int		ft_count_word(char *s, char c);
 
 #endif

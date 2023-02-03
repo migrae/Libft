@@ -6,7 +6,7 @@
 /*   By: mgraefen <mgraefen@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 13:16:13 by mgraefen          #+#    #+#             */
-/*   Updated: 2023/01/09 13:06:49 by mgraefen         ###   ########.fr       */
+/*   Updated: 2023/02/03 09:41:03 by mgraefen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,8 @@ char	*ft_create_line(char *stash)
 		return (NULL);
 	i = 0;
 	stop = ft_len_to_line_end(stash, 1);
-	line = (char *) ft_gnl_calloc(sizeof(char), ft_len_to_line_end(stash, 1) + 1);
+	line = (char *) ft_gnl_calloc(sizeof(char),
+			ft_len_to_line_end(stash, 1) + 1);
 	if (!line)
 		return (free(stash), NULL);
 	while (i < stop)

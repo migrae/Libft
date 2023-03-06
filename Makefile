@@ -49,6 +49,7 @@ MANDO = ft_isalpha.c \
 		ft_print_percent.c \
 		ft_print_nbr.c \
 		ft_print_hex.c \
+		ft_duplicate_2d.c \
 		get_next_line.c \
 		get_next_line_utils.c
 
@@ -63,7 +64,7 @@ BONUS = ft_lstnew.c \
 		ft_lstmap.c
 
 MANDOOBJ	= $(MANDO:.c=.o)
-BONUSOBJ = $(BONUS:.c=.o)
+BONUSOBJ 	= $(BONUS:.c=.o)
 
 $(NAME): $(MANDOOBJ)
 	@$(AR) $(ARFLAGS) $@ $^

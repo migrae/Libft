@@ -6,7 +6,7 @@
 /*   By: mgraefen <mgraefen@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 10:15:58 by mgraefen          #+#    #+#             */
-/*   Updated: 2023/03/06 11:33:09 by mgraefen         ###   ########.fr       */
+/*   Updated: 2023/03/07 08:29:03 by mgraefen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -130,5 +130,7 @@ int		ft_count_word(char *s, char c);
 long	ft_atol(const char *str);
 
 char	**ft_dupclicate_2d(char **str);
+
+char *ft_trim_last(char *str, char c);
 
 #endif

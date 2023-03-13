@@ -6,23 +6,23 @@
 /*   By: mgraefen <mgraefen@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 08:26:35 by mgraefen          #+#    #+#             */
-/*   Updated: 2023/03/07 08:27:02 by mgraefen         ###   ########.fr       */
+/*   Updated: 2023/03/13 08:49:13 by mgraefen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_trim_last(char *str, char c)
+char	*ft_trim_last(char *str, char c)
 {
 	int		i;
 	char	*new;
 
 	i = ft_strlen(str);
-	while(str[i] != c)
+	while (str[i] != c)
 		i--;
 	new = ft_calloc(sizeof(char), i + 1);
-	if(!new)
-		return(NULL);
+	if (!new)
+		return (NULL);
 	ft_strlcpy(new, str, i + 1);
-	return(new);
+	return (new);
 }

@@ -51,6 +51,8 @@ MANDO = ft_isalpha.c \
 		ft_print_hex.c \
 		ft_duplicate_2d.c \
 		ft_trim_last.c \
+		ft_strjoin_free_opt.c \
+		ft_str_divide.c \
 		get_next_line.c \
 		get_next_line_utils.c
 

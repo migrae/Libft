@@ -56,7 +56,8 @@ MANDO = ft_isalpha.c \
 		get_next_line.c \
 		get_next_line_utils.c \
 		ft_join_2d_array.c \
-		ft_2d_array_len.c
+		ft_2d_array_len.c \
+		ft_free_2d.c
 
 BONUS = ft_lstnew.c \
 		ft_lstadd_front.c \

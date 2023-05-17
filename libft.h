@@ -6,7 +6,7 @@
 /*   By: mgraefen <mgraefen@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 10:15:58 by mgraefen          #+#    #+#             */
-/*   Updated: 2023/04/04 10:08:35 by mgraefen         ###   ########.fr       */
+/*   Updated: 2023/05/17 14:51:39 by mgraefen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -139,6 +139,8 @@ char	*ft_str_divide(char *str, char c, int at_first, int first);
 
 char	**join_2d_array(char **s1, char **s2);
 
-int	ft_2d_array_len(char **array);
+int		ft_2d_array_len(char **array);
+
+void	ft_free2d(char **s);
 
 #endif
